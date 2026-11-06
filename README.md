@@ -27,3 +27,36 @@ Fuentes//
 https://www.coderhouse.com/ar/coderlibrary/que-es-typescript-y-por-que-es-clave-en-desarrollo-web-moderno
 ¿Cuál es su versión actual?
 \*/La version actual de TS Microsoft lanzó oficialmente TypeScript 7.0.2
+
+Tema 2: Crear y ejecutar un proyecto
+¿Cómo se instala TypeScript en un proyecto?
+
+npm install -g typescript // esto para instalar
+
+tsc -v // Para comprobar que la instalación se ha realizado correctamente y la version instalada
+
+Fuentes:
+https://softwarecrafters.io/typescript/typescript-tutorial-javascript-introduccion
+
+¿Para qué sirve el archivo tsconfig.json?
+//El tsconfig.json Es el archivo de configuración del proyecto. Le indica a TypeScript tres cosas:
+
+1. Qué archivos forman el proyecto: include.
+2. Qué tan estricto debe ser al verificar tipos: strict y opciones relacionadas.
+3. Cómo generar el JavaScript: versión (target), sistema de módulos (module) y carpeta de salid(outDir).
+
+   ¿Qué hace el comando tsc?
+   // Es el compilador. Cuando se ejecuta sin argumentos:
+
+4. Busca el tsconfig.json en la carpeta actual.
+5. Toma los archivos indicados en include.
+6. Verifica los tipos de todo el código y muestra los errores.
+
+¿Qué diferencia hay entre ejecutar un archivo con tsc, tsx y node?
+//
+
+tsc: verifica tipos y compila cuando usas npm run check/ build
+
+node: Describe a TypeScript la API de Node
+
+tsx: ejecuta .ts sin compilar, con recarga automatica cuando usas npm run dev
