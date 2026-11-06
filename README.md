@@ -60,3 +60,20 @@ tsc: verifica tipos y compila cuando usas npm run check/ build
 node: Describe a TypeScript la API de Node
 
 tsx: ejecuta .ts sin compilar, con recarga automatica cuando usas npm run dev
+
+Tema 3: Tipos básicos
+● ¿Qué son los tipos string, number y boolean?
+string: Texto. Los tres estilos de comillas tienen el mismo tipo.
+number: Cualquier número, entero o no. No existe int ni float.
+boolean: true, false, solo estos dos valores.
+● ¿Cómo se declara un array con tipo?
+const scores: Array<number> = [90, 85, 72];
+● ¿Qué es un tipo unión?
+TypeScript permite un tipo flexible llamado cualquiera que puede asignarse a una variable cuyo tipo no es específico. Por otro lado, TypeScript permite combinar tipos específicos como un tipo de unión.TypeScript le permite crear un tipo de unión que es una combinación de tipos seleccionados separados por una barra vertical | .
+Sintaxis básica: let valor: string | number;
+
+fuente: https://www.codecademy.com/learn/learn-typescript/modules/learn-typescript-union-types/cheatsheet
+● ¿Por qué se recomienda evitar any?
+any es un tipo especial de TypeScript que desactiva toda verificación de tipos para una variable. Le permite asignar cualquier valor y llamar a cualquier metodo sin errores. Esto hace que parezca útil, pero silenciosamente rompe la seguridad que le brinda TypeScript.
+
+fuentes:https://dev.to/krunalkanojiya/how-to-use-the-any-type-and-when-to-avoid-it-148m
