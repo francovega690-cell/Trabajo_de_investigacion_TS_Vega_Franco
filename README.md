@@ -97,3 +97,17 @@ type es una forma de definir un alias para un tipo existente o crear un nuevo ti
 En TypeScript, puedes definir propiedades opcionales en una interfaz, en una clase, en un objeto o en un tipo usando '?' modificador después del nombre de la propiedad.
 ● ¿Cuándo conviene usar cada uno?
 Conviene usar type cuando necesitamos definir y reutilizar tipos de datos, crear estructuras o combinar diferentes tipos. En cambio, conviene usar propiedades opcionales (?) cuando queremos indicar que un dato no es obligatorio dentro de un objeto, una interfaz o una clase.
+
+Tema 6: Enums y tipos literales
+● ¿Qué es un enum?
+Un enum en TypeScript es un conjunto de constantes con nombre. enum Direction { Up, Down, Left, Right } crea a la vez un tipo, Direction, y un objeto en tiempo de ejecución a cuyos miembros accedes como Direction.Up. Los miembros se numeran desde 0 salvo que les des valores, y los enums de string dan a cada miembro un string legible.
+● ¿Qué es un tipo literal?
+Un tipo literal es un tipo con exactamente un valor: "up" es un tipo cuyo único miembro es el string "up", y 404 es un tipo cuyo único miembro es el número 404. Por sí solos no son muy útiles. Unidos en una unión, te dan una variable que acepta un conjunto fijo de valores y nada más.
+● ¿En qué se parecen y en qué se diferencian?
+Se parecen porque ambos permiten limitar los valores que puede tomar una variable, evitando valores no permitidos.
+
+Se diferencian en que enum agrupa constantes con nombres y crea una estructura disponible en tiempo de ejecución, mientras que los tipos literales establecen directamente los valores específicos que una variable puede aceptar.
+● ¿En qué situaciones se puede usar cada uno?
+Enum: se utiliza cuando necesitamos agrupar un conjunto de constantes relacionadas bajo un mismo nombre, por ejemplo, los días de la semana, los estados de un pedido o las direcciones de movimiento.
+
+Tipo literal: se utiliza cuando queremos limitar una variable a un conjunto específico de valores permitidos, por ejemplo, los roles de un usuario ADMIN, USER o los estados de una tarea Pendiente, En proceso, Completada.
