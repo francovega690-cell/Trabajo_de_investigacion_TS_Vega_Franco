@@ -1,0 +1,19 @@
+{
+  "name": "investigacion-ts",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "main": "dist/03-tipos-basicos.js",
+  "scripts": {
+    "tema3": "tsx src/03-tipos-basicos.ts",
+    "tema4": "tsx src/04-funciones.ts",
+    "tema5": "tsx src/05-interfaces-type.ts",
+    "tema6": "tsx src/06-enums-literales.ts",
+    "check": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
