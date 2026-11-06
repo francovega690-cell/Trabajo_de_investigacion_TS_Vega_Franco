@@ -87,3 +87,13 @@ El tipo de retorno se indica colocando dos puntos : después de los paréntesis 
 Es un parámetro que no es obligatorio al llamar a una función. En TypeScript se representa colocando un signo de interrogación ? después del nombre del parámetro.
 ● ¿Qué es un parámetro por defecto?
 Un parámetro por defecto es el que tiene un valor asignado previamente. Si al llamar a la función no se da otro valor, se utiliza automáticamente el valor establecido por defecto. En TypeScript se indica utilizando el signo igual =.
+
+Tema 5: Interfaces y type
+● ¿Qué es una interfaz y para qué sirve?
+En pocas palabras, las interfaces describen la estructura del objeto, es decir, cómo debería ser su apariencia. En TypeScript , podemos trabajar con interfaces . En TypeScript, una interfaz solo contiene la definición de métodos y propiedades, no su implementación. Es la funcionalidad de la clase la que establece la conexión con la interfaz, proporcionando todos los parámetros de la misma.
+● ¿Qué es un type?
+type es una forma de definir un alias para un tipo existente o crear un nuevo tipo a partir de una combinación de otros tipos. Esto permite reutilizar tipos existentes o crear nuevos tipos basados en composiciones, uniones, intersecciones u otras operaciones con tipos.
+● ¿Cómo se declara una propiedad opcional?
+En TypeScript, puedes definir propiedades opcionales en una interfaz, en una clase, en un objeto o en un tipo usando '?' modificador después del nombre de la propiedad.
+● ¿Cuándo conviene usar cada uno?
+Conviene usar type cuando necesitamos definir y reutilizar tipos de datos, crear estructuras o combinar diferentes tipos. En cambio, conviene usar propiedades opcionales (?) cuando queremos indicar que un dato no es obligatorio dentro de un objeto, una interfaz o una clase.
