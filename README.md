@@ -77,3 +77,13 @@ fuente: https://www.codecademy.com/learn/learn-typescript/modules/learn-typescri
 any es un tipo especial de TypeScript que desactiva toda verificación de tipos para una variable. Le permite asignar cualquier valor y llamar a cualquier metodo sin errores. Esto hace que parezca útil, pero silenciosamente rompe la seguridad que le brinda TypeScript.
 
 fuentes:https://dev.to/krunalkanojiya/how-to-use-the-any-type-and-when-to-avoid-it-148m
+
+Tema 4: Funciones
+● ¿Cómo se indican los tipos de los parámetros?
+En TypeScript, el tipo de los parámetros se indica colocando dos puntos : después del nombre del parámetro y escribiendo el tipo de dato que va a recibir.
+● ¿Cómo se indica el tipo de retorno?
+El tipo de retorno se indica colocando dos puntos : después de los paréntesis de los parámetros y escribiendo el tipo de dato que la función devolverá, por ejemplo string o number.
+● ¿Qué es un parámetro opcional?
+Es un parámetro que no es obligatorio al llamar a una función. En TypeScript se representa colocando un signo de interrogación ? después del nombre del parámetro.
+● ¿Qué es un parámetro por defecto?
+Un parámetro por defecto es el que tiene un valor asignado previamente. Si al llamar a la función no se da otro valor, se utiliza automáticamente el valor establecido por defecto. En TypeScript se indica utilizando el signo igual =.
